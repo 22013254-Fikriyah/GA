@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NF Consult - Booking Payment</title>
+  <style>
+    .logo{
+      width: 10%;
+      position: absolute;
+      height: 11%;
+      margin-top: 6px;
+      margin-left: 6px;
+    }
+    h1{
+      text-align: center;
+      padding: 20px;
+      color: white;
+      background-color: rgb(73, 109, 73);
+    }
+    ul{
+      list-style-type: none;
+    }
+    .menu li a{
+      color: white;
+      text-decoration: none;
+    }
+    .menu li a:hover{
+      text-decoration: underline;
+    }
+    nav{
+      background: rgb(73, 109, 73);
+      padding: 0px 5px;
+    }
+    .menu li{
+      font-size: 16px;
+    }
+    .menu{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .payment-row{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 90px;
+      background-color: rgb(73, 109, 73);
+      align-items: center;
+    }
+    .payment-body-box h2{
+      text-align: center;
+      font-size: 40px;
+    }
+    .payment-col-6 p{
+      font-weight: bold;
+      color: white;
+    }
+    .payment-col-6, .payment-col-6 input{
+      font-weight: 500;
+      padding: 10px 50px 10px 50px;
+    }
+    .payment-col-2 p{
+      font-weight: bold;
+      color: white;
+      margin-left: 30px;
+    }
+    .payment-col-2, .payment-col-2 input{
+      font-weight: 500;
+      padding: 10px 3px 10px 3px;
+      margin-left: 30px;
+    }
+    button{
+      font-weight: 500;
+      border: 1px solid black;
+      border-radius: 40px;
+      padding: 10px 45px 10px 45px;
+      text-decoration: none;
+      color: black;
+      background-color: white;
+      margin-left: 70px;
+      margin-bottom: 40px;
+    }
+    button:hover{
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    footer{
+      box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+      -webkit-box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+      -moz-box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+    }
+  </style>
+</head>
+
+<body>
+  <img src="logo.png" class="logo">
+  <header>
+      <h1>Complete Payment</h1>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li class="item"><a href="homepage.html">Home</a></li>
+      <li class="item"><a href="service.html">Services</a></li>
+      <li class="item"><a href="booking.html">Booking a consult</a></li>
+      <li class="item"><a href="AboutUs.html">About Us</a></li>
+      
+    </ul>
+  </nav>
+
+  <div class="payment-container">
+    <div class="payment-body">
+      <div class="payment-head">
+        <h2>Complete Your Payment</h2>
+        <p>**Please fill out the information below to complete your payment. Ensure all details are being input correctly.</p>
+      </div>
+
+      <div class="payment-body-box">
+        <h2>Payment Details</h2>
+        <div class="payment-row">
+
+          <div class="payment-col-6">
+            <p>Cardholder Name:</p>
+            <input type="text" name="cardholdername" id="cardholdername" placeholder="" required>
+          </div>
+
+          <div class="payment-col-6">
+            <p>Card Number:</p>
+            <input type="text" name="cardno." id="cardno." placeholder="4111 1111 1111 1111" required>
+          </div>
+
+          <div class="payment-col-2">
+            <p>Expiration:</p>
+            <input type="text" name="exp" id="exp" placeholder="MM/YY" required>
+          </div>
+
+          <div class="payment-col-2">
+            <p>CVV:</p>
+            <input type="text" name="cvv" id="cvv" placeholder="123" required>
+          </div>
+
+          <div class="payment-col-6">
+            <p>Postal Code:</p>
+            <input type="text" name="postal" id="postal" placeholder="Postal or ZIP code" required>
+          </div>
+
+          <div class="payment-col-6">
+            <p>Select Payment Type:</p>
+            <select name="s-select" required>
+
+                <option>Select Payment Type</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="visa">Visa</option>
+                <option value="paypal">Paypal</option>
+                <option value="applepay">Apple Pay</option>
+                <option value="atome">Atome - 3 months installment</option>
+
+            </select>
+          </div>
+
+          <br>
+          <div class="form-field" style="margin-left: 280px;">
+            <button type="button"onclick="window.location.href='http://127.0.0.1:5501/Code/booking.html';">Back</button>
+          </div>
+          <div class="form-field">
+            <button type="button"onclick="window.location.href='http://127.0.0.1:5501/Code/paymentComplete.html';">Complete payment</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+        @NF Consult. All rights reserved.
+
+        Contact us at help@nfconsult.com for any inquiries.
+      
+    </p>
+</footer>
+</body>
+</html>

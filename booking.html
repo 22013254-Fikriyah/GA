@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NF Consult - Book a Consult</title>
+  <style>
+    .logo{
+        width: 10%;
+        position: absolute;
+        height: 11%;
+        margin-top: 6px;
+        margin-left: 6px;
+    }
+    h1{
+        text-align: center;
+        padding: 20px;
+        color: white;
+        background-color: rgb(73, 109, 73);
+    }
+    ul{
+      list-style-type: none;
+    }
+    .menu li a{
+      color: white;
+      text-decoration: none;
+    }
+    .menu li a:hover{
+      text-decoration: underline;
+    }
+    nav{
+      background: rgb(73, 109, 73);
+      padding: 0px 5px;
+    }
+    .menu li{
+      font-size: 16px;
+    }
+    .menu{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .bf-col-6 p{
+        font-weight: bold;
+        color: white;
+    }
+    .bf-col-6, input, .bf-col-12{
+      font-weight: 500;
+      padding: 10px 50px 10px 50px;
+    }
+    button{
+        font-weight: 500;
+        border: 1px solid black;
+        border-radius: 40px;
+        padding: 10px 45px 10px 45px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+    }
+    button:hover{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .bf-row{
+        display: inline-block;
+    }
+    .bf-row{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 90px;
+      background-color: rgb(73, 109, 73);
+      align-items: center;
+    }
+    footer{
+      box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+      -webkit-box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+      -moz-box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+    }
+  </style>
+</head>
+
+<body>
+    <img src="logo.png" class="logo">
+    <header>
+        <h1>Book a Consult</h1>
+    </header>
+
+    <nav>
+        <ul class="menu">
+          <li class="item"><a href="homepage.html">Home</a></li>
+          <li class="item"><a href="service.html">Services</a></li>
+          <li class="item"><a href="booking.html">Booking a consult</a></li>
+          <li class="item"><a href="AboutUs.html">About Us</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="bf-container">
+        <div class="bf-body">
+            <div class="bf-head">
+                <h2>Booking Form</h2>
+                <p>**Please fill out the information below to complete your online booking. We will provide you with the best specialist for your preferred service.</p>
+            </div>
+
+            <div clas="bf-body-box">
+                <div class="bf-row">
+
+                    <div class="bf-col-6">
+                        <p>Your Name:</p>
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                    </div>
+
+                    <div class="bf-col-6">
+                        <p>Email Address:</p>
+                        <input type="eamil" name="email" id="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="bf-col-6">
+                        <p>Select Date:</p>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+
+                    <div class="bf-col-6">
+                        <p>Select Time:</p>
+                        <select name="s-select" required>
+
+                            <option>Select Time</option>
+                            <option value="9-1030">9am - 1030am</option>
+                            <option value="11-1230">11am - 1230pm</option>
+                            <option value="2-330">2pm - 330pm</option>
+                            <option value="4-530">4pm - 530pm</option>
+                            <option value="6-730">6pm - 730pm</option>
+                            <option value="8-930">8pm - 930pm</option>
+    
+                        </select>
+                    </div>
+
+                    <div class="bf-col-6">
+                        <p>Select Service:</p>
+                        <select name="s-select" required>
+
+                            <option>Select Service</option>
+                            <option value="mortgage">Mortgage Planning</option>
+                            <option value="taxAdvice">Tax Advices</option>
+                            <option value="insurance">Insurance Guidance</option>
+                            <option value="investment">Investment Assistance</option>
+                            <option value="manageFinance">Managing Finance</option>
+                            <option value="retirement">Retirement Planning</option>
+    
+                        </select>
+                    </div>
+
+                    <div class="bf-col-6">
+                        <p>Your phone Number:</p>
+                        <input type="phone number" name="number" id="number" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="bf-col-12">
+                        <p>Messages:</p>
+                        <textarea name="Messages" id="Messages" cols="100" rows="4"></textarea>
+                    </div>
+                    <br>
+
+                    <div class="form-field">
+                        <button type="button"onclick="window.location.href='http://127.0.0.1:5501/Code/payment.html';">Proceed to payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            @NF Consult. All rights reserved.
+    
+            Contact us at help@nfconsult.com for any inquiries.
+          
+        </p>
+    </footer>
+</body>
+</html>

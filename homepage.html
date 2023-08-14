@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NF Consult - Home</title>
+  <style>
+    .logo{
+        width: 10%;
+        position: absolute;
+        height: 11%;
+        margin-top: 6px;
+        margin-left: 6px;
+    }
+    h1{
+        text-align: center;
+        padding: 20px;
+        color: white;
+        background-color: rgb(73, 109, 73);
+    }
+    body{
+        margin: 0px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .navbar{
+        padding: 20px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+        -webkit-box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+        -moz-box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+    }
+    .navbar-left div{
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .navbar-left, .navbar-right{
+        display: flex;
+        align-items: center;
+    }
+    .navbar-left > *, .navbar-right > *{
+        margin: 10px;
+    }
+    btn{
+        font-weight: 500;
+        border: 1px solid black;
+        border-radius: 40px;
+        padding: 5px 20px 5px 20px;
+    }
+    btn:hover{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    img{
+        align-items: center;
+        width: 575px;
+        height: 100%;
+    }
+    .finance{
+        display: flex;
+    }
+    .finance-left, .finance-right{
+        max-width: 50%;
+        width: 50%;
+    }
+    .finance-title{
+        width: 100%;
+        text-align: center;
+        color: white;
+        margin: auto;
+        margin-right: 50px;
+    }
+    button{
+        border: 1px solid white;
+        max-width: max-content;
+        border-radius: 40px;
+        padding: 5px 20px 5px 20px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-left: 250px;
+    }
+    button{
+        color: white;
+    }
+    button{
+        color: black;
+        border-color: black;
+    }
+    button:hover{
+        background-color: rgba(0, 0, 0, 0.489);
+    }
+    .finance-description{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    footer{
+        box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+        -webkit-box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+        -moz-box-shadow: 0px 4px 5px 0px rgb(4, 75, 4);
+    }
+  </style>
+</head>
+
+<body>
+    <img src="logo.png" class="logo">
+    <header>
+        <h1>Welcome to NF Consult !</h1>
+    </header>
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="home">
+                <a href="homepage.html">
+                    Home</a>
+            </div>
+            <div class="services">
+                <a href="service.html">
+                    Services</a></div>
+            <div class="booking">
+                <a href="booking.html">
+                    Book a consult</a></div>
+            <div class="aboutus">
+                <a href="AboutUs.html">
+                    About Us</a></div>
+        </div>
+        <div class="navbar-right"></div>
+            <div class="log-in">
+                <a href="index.html">
+                    <btn>Log In</btn>
+                </a>
+            </div>
+    </div>
+
+    <br>
+    <div class="container">
+        <div class="finance-container">
+            <div class="finance" style="background-color: rgb(73, 109, 73);">
+                <div class="finance-left">
+                    <img src="finance.png">
+                </div>
+                <div class="finance-right">
+                    <div class="finance-title" style="font-size: 35px" style="margin-top: 20px">
+                        Plan Your Future with Us
+                    </div>
+                    <br>
+                    <div class="finance-description" style="font-size: 20px">
+                        Having trouble with finance? Need help with planning your future? We offer various financial services. Together with our experienced and qualified accountants, we guarantee you, you can grow your business with the insightful analytics we provide. 
+                        <br>
+                        Book a consult with us to plan your financial goals!
+                    </div>
+                    <br>
+                    <br>
+                    <div class="finance-button">
+                        <a href="signup.html">
+                            <button>Sign up now</button>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            @NF Consult. All rights reserved.
+    
+            Contact us at help@nfconsult.com for any inquiries.
+          
+        </p>
+    </footer>
+</body>
+</html>
